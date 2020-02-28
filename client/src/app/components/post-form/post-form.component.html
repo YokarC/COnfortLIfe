@@ -1,0 +1,29 @@
+<div class="col-md-4 offset-md-2">
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                   <input type="text" name="title" [(ngModel)]="post.title" placeholder="Titulo" class="form-control" autofocus>
+                </div>
+                <div class="form-group">
+                   <textarea name="description" [(ngModel)]="post.description" placeholder="Descripción" rows="2" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                   <input type="url" name="image" [(ngModel)]="post.image" placeholder="Link de imagen" class="form-control">
+                </div>
+                <button class="btn btn-success btn-block" (click)="edit ? updatePost() : saveNewPost()">
+                    GUARDAR
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="card card-body text-center">
+        <img [src]="post.image == '' ? '/assets/noimage.png' : post.image" class="card-img-top">
+        <h3>{{post.id}}. {{post.title == '' ? 'Título de la publicación' : post.title}} </h3>
+        <p>{{post.description == '' ? 'Descripción de la publicación' : post.description}}</p>
+        <p>{{post.created_at | date: 'yyyy-MM-dd'}}</p>
+    </div>
+</div>

@@ -1,0 +1,128 @@
+<section id="login" class="mb-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 mx-auto">
+          <div class="card_login">
+            <div class="card">
+              <div class="card-body text-center">
+                <form #formLogin="ngForm">
+                  <h1 class="h3 mb-3 font-weight-normal">Registrarse</h1>
+                  <div class="form-group">
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Nombre"required>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Correo"required>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña"required>
+                  </div>
+            
+                  <div>
+                    <p>
+                      ¿Como llego a esta página?<br>
+                      <input type="checkbox" name="cb-autos" value="gusta"> Recomendación<br>
+                      <input type="checkbox" name="cb-deportes" value="gusta"> Publicidad<br>
+                      <input type="checkbox" name="cb-videojuegos" value="gusta"> Casualidad
+                    </p>
+                  </div>
+
+                  <div>
+                    <p>
+                      ¿Con que facilidad te pones de mal humor? (de 1 a 10)<br>
+                      <input type="checkbox" name="cb-autos" value="gusta"> 1<br>
+                      <input type="checkbox" name="cb-deportes" value="gusta"> 2<br>
+                      <input type="checkbox" name="cb-autos" value="gusta"> 3<br>
+                      <input type="checkbox" name="cb-deportes" value="gusta"> 4<br>
+                      <input type="checkbox" name="cb-autos" value="gusta"> 5<br>
+                      <input type="checkbox" name="cb-deportes" value="gusta"> 6<br>
+                      <input type="checkbox" name="cb-autos" value="gusta"> 7<br>
+                      <input type="checkbox" name="cb-deportes" value="gusta"> 8<br>
+                      <input type="checkbox" name="cb-autos" value="gusta"> 9<br>
+                      <input type="checkbox" name="cb-videojuegos" value="gusta"> 10
+                    </p>
+                  </div>
+
+                  <div>
+                    <p>
+                      ¿Has tenido problemas de comunicación con tu pareja?<br>
+                      <input type="checkbox" name="cb-autos" value="gusta"> Nunca<br>
+                      <input type="checkbox" name="cb-deportes" value="gusta"> En pocas ocaciones<br>
+                      <input type="checkbox" name="cb-deportes" value="gusta"> De vez en cuando<br>
+                      <input type="checkbox" name="cb-videojuegos" value="gusta"> Siempre
+                    </p>
+                  </div>
+
+                  <div>
+                    <p>
+                      ¿Te preocupa mucho la impresión que das hacia tu pareja?<br>
+                      <input type="checkbox" name="cb-autos" value="gusta"> Mucho, no soporto que me tenga mal considerad@<br>
+                      <input type="checkbox" name="cb-deportes" value="gusta"> No siempre, sólo cuando me interesa algo en especial<br>
+                      <input type="checkbox" name="cb-videojuegos" value="gusta"> Lo que piense de mí no influirá en mi forma de ser
+                    </p>
+                  </div>
+
+                  <div>
+                    <p>
+                      ¿Qué sentiste cuando tu pareja descubrió por primera vez algún defecto que estabas ocultando?<br>
+                      <input type="checkbox" name="cb-autos" value="gusta"> Esta pregunta presupone que oculto mis defectos, respuesta es que no me importa y que prefiero que los conozca cuanto antes.<br>
+                      <input type="checkbox" name="cb-deportes" value="gusta"> Me siento muy mal y desde ese momento mi relación ya no es la misma.<br>
+                      <input type="checkbox" name="cb-videojuegos" value="gusta"> Me resulta incómodo, pero procuro no darle mayor importancia.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p>
+                      Cuándo has tenido algún fracaso amoroso, ¿de quién has pensado que era la culpa?<br>
+                      <input type="checkbox" name="cb-autos" value="gusta"> Mía, normalmente<br>
+                      <input type="checkbox" name="cb-deportes" value="gusta"> Del otro, normalmente.<br>
+                      <input type="checkbox" name="cb-videojuegos" value="gusta"> Cada fracaso es distinto, a veces uno a veces otro.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p>
+                      ¿Te has sentido maltratad@ por tu pareja sentimental?<br>
+                      <input type="radio" name="si" value="10"> Si<br>
+                      <input type="radio" name="no" value="0"> No
+                    </p>
+                  </div>
+
+                  <div>
+                    <p>
+                      ¿Qué medio utiliza para resolver los conflictos con tu pareja?<br>
+                      <input type="checkbox" name="si" value="10"> Diálogo<br>
+                      <input type="checkbox" name="si" value="10"> Evasión<br>
+                      <input type="checkbox" name="si" value="10"> Agresión verbal<br>
+                      <input type="checkbox" name="no" value="0"> Agresión física
+                    </p>
+                  </div>
+
+                  <div>
+                    <p>
+                      ¿Si tú pareja te ha agredido de alguna manera ¿Como has reaccionado?<br>
+                      <input type="checkbox" name="si" value="10"> Aceptar<br>
+                      <input type="checkbox" name="si" value="10"> Denunciar<br>
+                      <input type="checkbox" name="si" value="10"> Devolver la agresión<br>
+                      <input type="checkbox" name="no" value="0"> Disolver la ralacion
+                    </p>
+                  </div>
+
+                  <div>
+                    <p>
+                      Señale cual opción a su criterio sería una razón para aceptar cualquier tipo de agresión:<br>
+                      <input type="checkbox" name="si" value="10"> Amor<br>
+                      <input type="checkbox" name="si" value="10"> Estabilidad económica<br>
+                      <input type="checkbox" name="si" value="10"> No acabar con el núcleo familiar<br>
+                      <input type="checkbox" name="no" value="0"> Ninguna razón es válida
+                    </p>
+                  </div>
+
+                  <button type="submit" class="btn btn-sm btn-primary btn-block">Registrarse</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
